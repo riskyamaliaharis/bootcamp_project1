@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+}
+header {
+  height: 100px;
+  margin: auto 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.header-logo img,
+.about img {
+  margin: 5px 5px;
+  width: 25px;
+}
+
+.header-logo p,
+.about p {
+  display: inline-block;
+  font-weight: 700;
+  align-items: center;
+  color: #6a4029;
+}
+
+.header-menu li {
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.header-menu li a {
+  color: #6a4029;
+}
+
+.header-menu li a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-menu {
+  flex: 1;
+  color: #6a4029;
+}
+
+.header-profile {
+  flex: 1;
+}
+
+.header-profile .form-control {
+  border-radius: 30px;
+  background-color: #efeeee;
+}
+
+.header-profile img {
+  margin-right: 20px;
+}
+
+.header-profile .photo {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CONTENT */
+main {
+  min-height: 800px;
+}
+
+#content-set {
+  background-image: url("../img/nathan-dumlao-zTZRZV86GhE-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box-payment {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  left: 100px;
+  top: 200px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+
+.box-address-details {
+  position: absolute;
+  width: 454.86px;
+  height: 198.98px;
+  left: 1000px;
+  top: 383.02px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.box-payment-method {
+  position: absolute;
+  width: 454px;
+  height: 259px;
+  left: 821px;
+  top: 679px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* FOOTER */
+.about .description p {
+  width: 25%;
+  word-wrap: break-word;
+}
+
+#footer-set {
+  background-color: #f8f8f8;
+}
+
+footer {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer .about {
+  flex: 3;
+}
+
+footer .product,
+footer .engage {
+  flex: 1;
+  font-weight: 700;
+}
+.product li,
+.engage li {
+  list-style-type: none;
+
+  font-size: 15px;
+  line-height: 2;
+}
+
+.product li a,
+.engage li a {
+  color: black;
+}
+
+.product p,
+.engage p {
+  padding-left: 40px;
+}
