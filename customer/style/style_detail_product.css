@@ -160,7 +160,7 @@ main {
 
 .box1 img {
   border-radius: 50px 50px 50px 50px;
-  padding-top: 70px;
+  margin-top: 70px;
   width: 200px;
 }
 
