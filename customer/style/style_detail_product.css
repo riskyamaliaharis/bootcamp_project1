@@ -115,71 +115,76 @@ a {
 /* CONTENT */
 main {
   position: relative;
-  min-height: 900px;
+  min-height: 1000px;
   padding-top: 15px;
 }
 
 .navbar-nav a.on {
   font-weight: 700;
   border-bottom-style: ridge;
+  border-bottom-color: #895537;
 }
 
-.left-content-line {
-  position: absolute;
-  top: 0px;
-  left: 290px;
-  width: 0px;
-  min-height: 1000px;
-  border: 0.5px solid #9f9f9f;
-  z-index: 0;
-}
 .main-set {
   /* background-color: #bcbaba; */
   padding-top: 100px;
 }
 
-aside {
+.left-side {
   position: relative;
-  background-color: rebeccapurple;
-  border-right-width: 10px;
-  border-right-color: black;
 }
+.promo_info {
+  position: absolute;
+}
+
+/* h1.promo_info {
+  left: 70px;
+  z-index: 5;
+} */
+
 .box1,
 .box2,
 .box3 {
   border-radius: 20px;
+  position: absolute;
+  width: 270px;
 }
 .box1 {
-  position: absolute;
   font-family: "Rubik", sans-serif;
-  width: 270px;
+
   height: 472px;
   background-color: #ffcb65;
 
-  top: 200px;
-  left: -50px;
+  top: 180px;
+  left: -18px;
   z-index: 3;
   text-align: center;
 }
 
 div.box1 img {
-  margin-top: 70px;
+  margin-top: 40px;
   width: 140px;
 }
 
 .col-lg-3 .box1 p {
   font-size: 12px;
   line-height: 18px;
-  text-align: center;
   margin-bottom: 5px;
 }
 
-.col-lg-3 h1.rubik {
+.col-lg-3 h1.promo_info {
   font-weight: 700;
   font-size: 20px;
   line-height: 18px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  left: 70px;
+  top: 40px;
+  z-index: 5;
+}
+p.promo_info {
+  top: 70px;
+  z-index: 6;
 }
 
 .col-lg-3 p {
@@ -187,29 +192,26 @@ div.box1 img {
 }
 
 .box2 {
-  position: absolute;
-  width: 270px;
   height: 400px;
-  top: 236px;
-  left: -25px;
+  top: 216px;
+  left: 0px;
   z-index: 2;
   background-color: black;
 }
 .box3 {
-  position: absolute;
   z-index: 1;
-  width: 270px;
-  height: 338px;
+
+  height: 318px;
   top: 267px;
-  left: -7px;
+  left: 10px;
   background-color: #895537;
 }
 
 .apply_coupon {
   position: absolute;
   z-index: 5;
-  top: 700px;
-  left: -50px;
+  top: 680px;
+  left: -18px;
   width: 270px;
   border-radius: 15px;
   background-color: #895537;
@@ -219,13 +221,13 @@ div.box1 img {
 #terms {
   position: absolute;
   z-index: 6;
-  top: 780px;
-  left: -50px;
+  top: 760px;
+  left: -18px;
 }
 
 #terms .coupon {
   text-align: left;
-  font-size: small;
+  font-size: 12px;
   line-height: 0.2;
 }
 .line {
@@ -239,13 +241,15 @@ div.box1 img {
 .menu {
   padding: 10px;
   margin-top: 80px;
-  background-color: white;
+
   text-align: center;
   border-radius: 20px;
   position: relative;
+  width: 110px;
   height: 200px;
   box-shadow: 0 0 5px 5px #f8f8f8;
   padding-bottom: 0;
+  vertical-align: bottom;
 }
 
 /* .menu p.price {
@@ -277,6 +281,7 @@ div.box1 img {
 }
 
 #footer-set {
+  position: relative;
   background-color: #f8f8f8;
 }
 
@@ -364,6 +369,24 @@ footer .engage {
   footer-set div.about .social-media {
     align-self: flex-end;
   }
+
+  .menu {
+    margin: 40px auto;
+  }
+
+  div.left-side {
+    top: 1680px;
+    left: 150px;
+  }
+
+  .col-lg-3 h1.promo_info {
+    left: 60px;
+  }
+  p.promo_info {
+    left: -60px;
+  }
+
+  /* RESPONSIVE CONTENT */
 }
 
 @media (max-width: 992px) {
@@ -384,5 +407,23 @@ footer .engage {
   footer .product,
   footer .engage {
     flex: 1;
+  }
+
+  .left-side {
+    top: 950px;
+    left: 200px;
+  }
+
+  #footer-set {
+    margin-top: 850px;
+  }
+
+  .col-lg-3 h1.promo_info {
+    left: 70px;
+    top: 70px;
+  }
+  p.promo_info {
+    top: 100px;
+    left: -50px;
   }
 }
