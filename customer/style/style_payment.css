@@ -1,10 +1,20 @@
-* {
+html {
   margin: 0;
+  padding: 0;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-set {
+  background-color: white;
+  z-index: 10;
 }
 header {
   height: 100px;
   margin: auto 5px;
-  background-color: white;
+
   display: flex;
   align-items: center;
 }
@@ -33,6 +43,12 @@ header {
   padding-top: 10px;
 }
 
+.header-bar .fa-bars,
+.header-bar img {
+  display: none;
+  color: rgba(255, 186, 51, 1);
+}
+
 .header-menu li a {
   color: #6a4029;
 }
@@ -42,10 +58,18 @@ header {
   text-decoration: none;
 }
 
+/* .header-profile .fa-search {
+  display: none;
+} */
+
 .header-logo {
   flex: 1;
 }
 
+.header-menu ul {
+  padding-left: 0;
+  margin-left: -50px;
+}
 .header-menu {
   flex: 1;
   color: #6a4029;
@@ -55,21 +79,37 @@ header {
   flex: 1;
 }
 
+.header-menu a.active {
+  font-weight: 700;
+  font-size: large;
+}
+
 .header-profile .form-control {
   border-radius: 30px;
   background-color: #efeeee;
 }
 
-.header-profile img {
+.header-profile img.msg {
   margin-right: 20px;
+  width: 25px;
+  height: 25px;
 }
 
-.header-profile .photo {
+.header-profile img.photo {
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 a {
   text-decoration: none;
+}
+
+.form-control.mr-sm-2 {
+  width: 150px;
+  height: 25px;
+  margin-left: -20px;
 }
 
 /* CONTENT */
@@ -77,50 +117,131 @@ main {
   min-height: 800px;
 }
 
-#content-set {
+body {
   background-image: url("../img/nathan-dumlao-zTZRZV86GhE-unsplash\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box-payment {
-  position: absolute;
+  /* position: absolute;
   width: 400px;
   height: 500px;
   left: 100px;
-  top: 200px;
+  top: 200px; */
 
+  margin-top: 50px;
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
 }
 
+.box-details {
+  margin-top: 270px;
+}
 .box-address-details {
-  position: absolute;
+  /* position: absolute;
   width: 454.86px;
   height: 198.98px;
   left: 1000px;
-  top: 383.02px;
+  top: 383.02px; */
 
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
 .box-payment-method {
-  position: absolute;
+  /* position: absolute;
   width: 454px;
   height: 259px;
   left: 821px;
-  top: 679px;
+  top: 679px; */
 
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
+.box-payment-method .p-2 {
+  padding-left: 15px;
+}
+
+.box-payment .p-2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+p.checkout-item {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+  /* position: absolute;
+  z-index: 12; */
+  margin-top: 150px;
+}
+
+div.box-details h4 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+div.box-details a {
+  color: #ffffff;
+}
+
+.fa-credit-card,
+.fa-university,
+.fa-truck {
+  /* width: 25px;
+  height: 25px; */
+
+  border-radius: 5px;
+  border: 5px;
+  border-width: 50px;
+}
+
+.fa-credit-card {
+  background-color: rgba(244, 123, 10, 1);
+}
+
+.fa-university {
+  background-color: rgba(137, 85, 55, 1);
+}
+
+.fa-truck {
+  background-color: rgba(255, 186, 51, 1);
+}
+
+.box-details .btn {
+  border-radius: 10px;
+  background-color: rgba(137, 85, 55, 1);
+  margin-top: 15px;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
+  margin-bottom: 50px;
+  border-color: rgba(137, 85, 55, 1);
+}
+
+.box-details .btn:hover {
+  background-color: white;
+  color: rgba(137, 85, 55, 1);
+}
+
 /* FOOTER */
 .about .description p {
-  width: 25%;
+  width: 40%;
   word-wrap: break-word;
 }
 
@@ -130,8 +251,8 @@ main {
 
 footer {
   display: flex;
-  height: 400px;
-  align-items: center;
+  height: 300px;
+  align-items: flex-end;
   margin: 0 auto;
 }
 
@@ -147,7 +268,7 @@ footer .engage {
 .product li,
 .engage li {
   list-style-type: none;
-
+  font-weight: 5;
   font-size: 15px;
   line-height: 2;
 }
@@ -160,4 +281,95 @@ footer .engage {
 .product p,
 .engage p {
   padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+  .header-bar {
+    flex: 1;
+  }
+  .header-bar .fa-bars,
+  .header-bar img {
+    display: block;
+    float: right;
+    font-size: 25px;
+    padding: 21px 15px;
+    color: rgba(106, 64, 41, 1);
+  }
+
+  .header-profile {
+    display: none;
+  }
+
+  footer .about,
+  footer .product,
+  footer .engage {
+    flex: 1;
+  }
+
+  .product li,
+  .engage li {
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .about .description p {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  #footer-set .about p {
+    font-size: 12px;
+  }
+
+  footer {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  footer-set div.about .social-media {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-menu ul {
+    padding-left: 0;
+    margin-left: -70px;
+  }
+
+  .header-profile {
+    margin-right: -60px;
+  }
+
+  footer .about {
+    flex: 2;
+  }
+
+  footer .product,
+  footer .engage {
+    flex: 1;
+  }
+
+  .box-details {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-logo img {
+    width: 27px;
+  }
+  .header-logo p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .header-profile img.msg,
+  .header-profile img.photo {
+    width: 10px;
+    height: 10px;
+  }
 }
