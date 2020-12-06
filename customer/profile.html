@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+
+    <!-- Import CSS  -->
+    <link rel="stylesheet" href="style/style_profile.css">
+
+    <!-- Import Icon from Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="container-fluid header-set position-fixed">
+        <header class="container">  
+            <div class="header-logo rubik">
+                <img src="../img/coffee 1.png" alt="coffee-logo">
+                <p><strong>Coffee Shop</strong></p>
+            </div>
+            
+            <div class="header-menu rubik">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Your Cart</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </div>
+            
+            <div class="header-bar">
+                <span class="fa fa-bars fa-3x"></span>
+                <img class="photo rounded-circle" src="../img/image 39.png" alt="profile">
+                <img class="msg" src="../img/chat_icon.png" alt="chat-icon">
+            </div>
+            
+            <div class="header-profile">
+                <nav >
+                    <!-- <span class="fa fa-search fa-lg"></span> -->
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">   
+                    
+                      <img class="msg" src="../img/chat_icon.png" alt="chat-icon">
+                      <img class="photo" src="../img/image 39.png" alt="profile">
+                    </form>
+                    
+                  </nav>
+            </div>
+
+        </header>
+    </div>
+    <div class="header-line"></div>
+    <!-- End Header -->
+    
+    <!-- Start Content -->
+    <div class="container row">
+        <h1 class="main-title rubik">User Profile</h1>
+        <main class="col-lg-12 box-content container-fluid">
+            
+            <div class="row">
+                <aside class="col-lg-3 left-side align-middle">
+                    <div class="card1">
+                        <div class="d-flex flex-column">
+
+                            <div class="p-2 a">
+                                <img class="img-profile rounded-circle" src="../img/image 39.png" alt="profile">
+                                <p><b>Zulaikha</b></p>
+                                <p>zulaikha17@gmail.com</p>
+                            </div>
+                            <div class="p-2 b btn btn-sm">
+    
+                                <input type="file">
+                                
+                            </div>
+                            <div class="p-2">
+                                <input class="btn c" type="button" value="Remove photo">
+                            </div>
+    
+                            <div class="p-2">
+                                <button type="button" class="d btn">Edit Password</button>
+                            </div>
+    
+                            <div class="p-2 e">
+                                <h6>Do you want to save the change?</h6>
+                            </div>
+    
+                            <div class="p-2">
+                                <input class="btn f" type="button" value="Save change">
+                            </div>
+    
+                            <div class="p-2">
+                                <input class="btn g" type="button" value="Cancel">
+                            </div>
+    
+                            <div class="p-2">
+                                <button type="button" class="h btn">Log out</button>
+                            </div>
+    
+                          </div>
+                    </div>
+                    
+                </aside>
+                <aside class="col-lg-9 right-side">
+                    <div class="card2">
+                        <button type="reset" class="btn edit rounded-circle"><i class="fa fa-edit"></i></button>
+                        <!-- <input class="btn btn-primary" type="reset" value=".fa .fa-user-edit"> -->
+                        <div class="d-flex flex-column flex-wrap">
+                            <div class="p-2">
+                                <p class="poppins title-1">Contacts</p>
+                            </div>
+                            <div class="p-2 d-flex flex-row flex-wrap">
+                                
+                                <div class="p-2  form-group">
+                                    <label for="inputEmail">Email address :</label>
+                                    <input class="form-control input-profile" type="email" id="inputEmail">
+                                </div>
+                                <div class="p-2  form-group">
+                                    <label for="inputNumber">Mobile Number :</label>
+                                    <input class="form-control input-profile" type="text" id="inputNumber">
+                                </div>                               
+                                 
+                            </div>
+                            <div class="p-2 form-group">
+                                <label for="delivery">Delivery Adress :</label>
+                                <input class="form-control input-profile" type="text" id="delivery">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-wrap">
+                            <div class="p-2">
+                                <p class="poppins title-2">Details</p>
+                            </div>
+                            <div class="p-2 d-flex flex-row flex-wrap">
+                                
+                                <div class="p-2  form-group">
+                                    <label for="displayName">Display Name :</label>
+                                    <input class="form-control input-profile" type="text" id="displayName">
+                                </div>
+                                <div class="p-2  form-group">
+                                    <label for="date">DD/MM/YY :</label>
+                                    <input class="form-control input-profile" type="date" id="date">
+                                </div>                               
+                                 
+                            </div>
+                            <div class="p-2 form-group">
+                                <label for="firstName">First Name :</label>
+                                <input class="form-control input-profile" type="text" id="firstName">
+                            </div>
+                            <div class="p-2 form-group">
+                                <label for="lastName">Last Name :</label>
+                                <input class="form-control input-profile" type="text" id="lastName">
+                            </div>
+                            <div class="p-2 form-group align-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>            
+            </div>            
+        </main>        
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid" id="footer-set">
+    <footer class="container">
+        <div class="about">
+            <img src="../img/coffee 1.png" alt="coffee-logo">
+            <p class="rubik">Coffee Shop</p>
+            <div class="description">
+                <p class="font-weight-light">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+                
+            </div>
+            <div class="social-media">
+                <img src="../img/facebook_logo.png" alt="fb">
+                <img src="../img/twitter_logo.png" alt="twitter">
+                <img src="../img/instagram_logo.png" alt="ig">
+            </div>
+            <p class="font-weight-light">&copy;2020CoffeeStore</p>
+            
+        </div>
+        <div class="product">
+            <p class="rubik">Product</p>
+            <ul class="rubik ">
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="engage">
+            <p class="rubik">Engage</p>
+            <ul class="rubik  ">
+                <li><a href="#">Coffee Shop?</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    <!-- End Footer -->
+
+</body>
