@@ -141,6 +141,9 @@ a {
   display: none;
 }
 
+.basket h5 {
+  word-wrap: break-word;
+}
 /* .basket:hover .basket .option-appear {
   display: block;
 } 
@@ -271,9 +274,9 @@ footer .engage {
   }
   .header-bar .fa-bars,
   .header-bar img {
-    display: block;
+    display: inline-block;
     float: right;
-    font-size: 25px;
+    font-size: 20px;
     padding: 21px 15px;
     color: rgba(106, 64, 41, 1);
   }
@@ -352,9 +355,18 @@ footer .engage {
     font-size: 12px;
   }
 
-  .header-profile img.msg,
-  .header-profile img.photo {
-    width: 10px;
-    height: 10px;
+  .header-profile {
+    display: none;
+  }
+  .header-bar {
+    flex: 1;
+  }
+
+  .header-bar img,
+  .header-bar .fa {
+    padding: 0px;
+  }
+  .header-bar .fa {
+    padding-top: 5px;
   }
 }

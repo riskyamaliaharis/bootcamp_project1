@@ -372,6 +372,21 @@ footer .engage {
     font-size: 12px;
   }
 
+  .header-profile {
+    display: none;
+  }
+  .header-bar {
+    flex: 1;
+  }
+
+  .header-bar img,
+  .header-bar .fa {
+    padding: 0px;
+  }
+  .header-bar .fa {
+    padding-top: 5px;
+  }
+
   .header-profile img.msg,
   .header-profile img.photo {
     width: 10px;

@@ -410,3 +410,28 @@ footer .engage {
     margin: 0px auto 50px;
   }
 }
+
+@media (max-width: 576px) {
+  .header-logo img {
+    width: 27px;
+  }
+  .header-logo p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .header-profile {
+    display: none;
+  }
+  .header-bar {
+    flex: 1;
+  }
+
+  .header-bar img,
+  .header-bar .fa {
+    padding: 0px;
+  }
+  .header-bar .fa {
+    padding-top: 5px;
+  }
+}
