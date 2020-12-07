@@ -451,4 +451,9 @@ footer .engage {
   .header-bar .fa {
     padding-top: 5px;
   }
+
+  div.left-side {
+    top: 3300px;
+    left: 80px;
+  }
 }
