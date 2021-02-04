@@ -141,7 +141,11 @@ main {
   left: 70px;
   z-index: 5;
 } */
-
+img.rounded-circle.p {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover;
+}
 .box1,
 .box2,
 .box3 {

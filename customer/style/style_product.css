@@ -114,7 +114,7 @@ a {
 
 /* CONTENT */
 .main-set {
-  background-color: #bcbaba;
+  background-color: #eee;
 }
 main {
   min-height: 800px;
@@ -264,7 +264,7 @@ section {
 }
 .left-time,
 .right-time {
-  background-color: #bcbaba;
+  background-color: #eee;
   border: none;
 }
 
